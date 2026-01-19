@@ -1,0 +1,14 @@
+# NiPergo SEO Sitemap
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://nipergo.com.tr/sitemap.xml
+
+# Disallow admin areas
+Disallow: /admin/
+Disallow: /storage/
+
+# Allow assets
+Allow: /build/
+Allow: /images/
