@@ -19,6 +19,13 @@
     <link rel="manifest" href="/manifest.json">
     <meta name="theme-color" content="#2563eb">
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="<?php echo e(asset('favicon.png')); ?>">
+    <link rel="icon" type="image/png" sizes="32x32" href="<?php echo e(asset('favicon.png')); ?>">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?php echo e(asset('favicon.png')); ?>">
+    <link rel="apple-touch-icon" href="<?php echo e(asset('favicon.png')); ?>">
+    <meta property="og:image" content="<?php echo e(asset('images/logo.png')); ?>">
+
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -28,7 +35,7 @@
     <script>
         if (localStorage.getItem('darkMode') === 'true' || (!localStorage.getItem('darkMode') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
             document.documentElement.classList.add('dark');
-        }
+    }
     </script>
     <style>
         .dark body {
@@ -173,7 +180,7 @@
         window.toggleDarkMode = function () {
             document.documentElement.classList.toggle('dark');
             localStorage.setItem('darkMode', document.documentElement.classList.contains('dark'));
-        }
+    }
     </script>
     <?php echo $__env->yieldPushContent('scripts'); ?>
 </body>
