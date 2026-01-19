@@ -21,9 +21,7 @@
                     <?php if(setting('site_logo')): ?>
                         <img src="<?php echo e(asset('storage/' . setting('site_logo'))); ?>" alt="<?php echo e(setting('site_name')); ?>" class="h-10 transition-transform group-hover:scale-105">
                     <?php else: ?>
-                        <span class="font-display font-black text-3xl text-white group-hover:drop-shadow-[0_0_15px_rgba(59,130,246,0.4)] transition-all">
-                            <?php echo e(setting('site_name', 'NiPergo')); ?><span class="bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">.</span>
-                        </span>
+                        <img src="<?php echo e(asset('images/logo.png')); ?>" alt="NiPergo" class="h-9 transition-all group-hover:scale-105 group-hover:drop-shadow-[0_0_15px_rgba(59,130,246,0.4)]">
                     <?php endif; ?>
                 </a>
                 <p class="text-slate-400 text-sm leading-relaxed">

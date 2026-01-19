@@ -55,6 +55,7 @@
 </head>
 
 <body class="font-sans antialiased bg-white text-gray-900">
+    <?php echo $__env->make('components.loading-screen', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?>
     <?php echo $__env->make('components.header', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?>
 
     <main>

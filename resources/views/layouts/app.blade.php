@@ -55,6 +55,7 @@
 </head>
 
 <body class="font-sans antialiased bg-white text-gray-900">
+    @include('components.loading-screen')
     @include('components.header')
 
     <main>
